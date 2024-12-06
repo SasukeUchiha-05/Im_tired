@@ -101,7 +101,7 @@ const QuizPage = () => {
 
     
     try {
-      const response = await axios.post("http://localhost:3001/predict", {userId : ID , answer : answers}, );
+      const response = await axios.post("https://im-tired-ten.vercel.app/predict", {userId : ID , answer : answers}, );
 
       // Handle the response as needed
       console.log("Backend response:", response.data);
