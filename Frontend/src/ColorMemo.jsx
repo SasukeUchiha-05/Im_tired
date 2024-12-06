@@ -60,7 +60,7 @@ function Appp() {
     const ID = localStorage.getItem('userId');
     localStorage.setItem('ColorMemoScore', highestScore);
     axios
-      .post('http://localhost:3001/colorMemo', { Cscore: highestScore, userId: ID })
+      .post('https://im-tired-ten.vercel.app/colorMemo', { Cscore: highestScore, userId: ID })
     setGameState('new game');
     setScore(0);
     setLevel(1);
