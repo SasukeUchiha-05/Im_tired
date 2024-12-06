@@ -1,4 +1,4 @@
-import Navbar from './Navbar'; 
+import Navbar from './NavBar'; 
 import ContForm from './componets/ContForm';
 import Footer from './componets/Footer';
 import pic from './images/cont.jpg';
