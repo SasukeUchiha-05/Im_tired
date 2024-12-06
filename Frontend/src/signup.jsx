@@ -16,7 +16,7 @@ const handleChange = (e) => {
 
 const handleGenerateOTP = async () => {
     try {
-        const response = await axios.post('http://localhost:3001/GenerateOTP', {
+        const response = await axios.post('https://im-tired-ten.vercel.app/GenerateOTP', {
             email: formData.email,
         });
 
@@ -38,7 +38,7 @@ const redirectToLogin = () => {
 const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        const response = await axios.post('http://localhost:3001/register', formData);
+        const response = await axios.post('https://im-tired-ten.vercel.app/register', formData);
 
         console.log(response.data.message);
 
