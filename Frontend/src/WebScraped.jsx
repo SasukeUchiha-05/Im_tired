@@ -2,7 +2,7 @@ import { Button } from "bootstrap";
 
 function Webscraped(){
     const handleClick = async () => {
-        fetch('http://localhost:3001/webscraped')
+        fetch('https://im-tired-ten.vercel.app/webscraped')
         console.log('Button clicked.')
 
     }
