@@ -1,4 +1,4 @@
-import Navbar from './Navbar'; 
+import Navbar from './NavBar'; 
 import Abus from './componets/Abus';
 import Footer from './componets/Footer';
 import p1 from './images/aboutus3.jpg'
