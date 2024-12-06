@@ -21,7 +21,7 @@ function ProfileUpdate() {
     try {
       const userId = localStorage.getItem('userId');
       const response = await axios.post(
-        'http://localhost:3001/updateProfile',
+        'https://im-tired-ten.vercel.app/updateProfile',
         { userId, newUsername, newEmail, newAddress , newDOB, newGender, newEducation },
         { withCredentials: true }
       );
