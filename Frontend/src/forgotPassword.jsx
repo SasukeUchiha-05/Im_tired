@@ -16,7 +16,7 @@ function ForgotPassword() {
 
     const handleGenerateOTP = async () => {
         try {
-            const response = await axios.post('http://localhost:3001/generateOTP', {
+            const response = await axios.post('https://im-tired-ten.vercel.app/generateOTP', {
                 email: formData.email,
             });
 
@@ -43,7 +43,7 @@ function ForgotPassword() {
         }
 
         try {
-            const response = await axios.post('http://localhost:3001/forgotPassword', formData);
+            const response = await axios.post('https://im-tired-ten.vercel.app/forgotPassword', formData);
 
             console.log(response.data.message);
 
