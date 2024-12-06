@@ -24,6 +24,8 @@ app.use(cors({
 
 
 
+app.options('*', cors()); // Respond to preflight requests for all routes
+
 app.get('/',async(req,res)=>{
     res.json("Get works so it works lol");
 });
