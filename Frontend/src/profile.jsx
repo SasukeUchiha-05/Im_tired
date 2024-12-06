@@ -16,7 +16,7 @@ function Profile() {
   useEffect(() => {
     const fetchUserDetails = async () => {
       try {
-        const response = await axios.post('http://localhost:3001/profile', { userId: ID }, { withCredentials: true });
+        const response = await axios.post('https://im-tired-ten.vercel.app/profile', { userId: ID }, { withCredentials: true });
         setUserDetails(response.data);
         console.log(response.data);
         setLoading(false);
