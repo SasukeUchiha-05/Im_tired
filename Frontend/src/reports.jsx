@@ -24,7 +24,7 @@ const Reports = () => {
       formData.append("file", file);
       formData.append("userId", ID);
 
-      axios.post("http://localhost:3001/UploadFile", formData, {});
+      axios.post("https://im-tired-ten.vercel.app/UploadFile", formData, {});
 
       window.alert("File uploaded successfully!");
 
