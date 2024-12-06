@@ -22,9 +22,14 @@ app.use(cors({
 }));
 
 
+app.get('/',async(req,res)=>{
+    res.json("Get works so it works lol");
+});
+
+
 
 // mongodb+srv://vijaysaiuchiha:Sasuke05@cognitiveretraining.czz5xi7.mongodb.net/patient
-mongoose.connect("mongodb://localhost:27017", { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://vijaysaiuchiha:Sasuke05@cognitiveretraining.czz5xi7.mongodb.net/patient", { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log("MongoDB connected");
     })
@@ -44,6 +49,7 @@ mongoose.connect("mongodb://localhost:27017", { useNewUrlParser: true, useUnifie
         res.status(500).json({ error: 'Internal Server Error' });
       }
     });
+
 
 
 app.post('/GenerateOtp' , async (req,res) => {
