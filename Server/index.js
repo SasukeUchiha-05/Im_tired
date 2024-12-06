@@ -17,10 +17,11 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-    origin: /^https:\/\/im-tired-zilg\.vercel\.app(\/.*)?$/, // Allow all paths of the domain
+    origin: "https://im-tired-zilg.vercel.app", // Base domain
     methods: ["POST", "GET", "DELETE", "PUT"],
     credentials: true,
 }));
+
 
 
 app.get('/',async(req,res)=>{
