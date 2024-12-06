@@ -45,6 +45,10 @@ mongoose.connect("mongodb://localhost:27017", { useNewUrlParser: true, useUnifie
       }
     });
 
+app.get('/',async(req,res)=>{
+    res.send("Get works so it works lol");
+});
+
 
 app.post('/GenerateOtp' , async (req,res) => {
   const{ email } = req.body;
