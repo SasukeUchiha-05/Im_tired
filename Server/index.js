@@ -17,8 +17,8 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-    origin: ["https://im-tired-zilg.vercel.app/"],
-    methods:["POST","GET","DELETE","PUT"],
+    origin: /^https:\/\/im-tired-zilg\.vercel\.app(\/.*)?$/, // Allow all paths of the domain
+    methods: ["POST", "GET", "DELETE", "PUT"],
     credentials: true,
 }));
 
