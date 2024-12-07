@@ -33,7 +33,7 @@ const root = createRoot(rootElement);
 
 function App(){
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/">
     {/* <AuthProvider> */}
       <Routes>
         <Route path="/register" element={<Signup />} />
